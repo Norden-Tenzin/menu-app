@@ -1,0 +1,64 @@
+@import "./Helper.scss";
+
+.dd-wrapper-menu-item {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  @include click;
+  .dd-button {
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    // align-items: center;
+    transition: all 0.3s;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    .dd-button-text {
+      color: black;
+      font-size: 1rem;
+      margin: 0px;
+    }
+    .dd-button-icon {
+      position: absolute;
+      right: 0px;
+      top: 30%;
+    }
+  }
+  :active {
+    transform: translateY(0.5px);
+    transition-duration: 0.35s;
+    border-radius: 5px;
+  }
+  .dd-list {
+    width: 150%;
+    border-radius: 5px;
+    padding: 0.1rem;
+    padding-right: 8px;
+    border: 1px solid black;
+    position: absolute;
+    top: 2rem;
+    right: 0px;
+    display: flex;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    flex-direction: column;
+    z-index: 10;
+    gap: 10px;
+    background-color: white;
+  }
+  .divider {
+    width: 85%;
+    height: 1px;
+    background-color: grey;
+    margin: auto;
+  }
+}

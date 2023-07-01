@@ -1,0 +1,125 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  .page {
+    max-width: 1280px;
+    width: 100%;
+    min-height: 100dvh;
+    background-color: white;
+  }
+}
+
+.header-container {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header-text {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .header-tag-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    .header-tag-text {
+      font-size: 1rem;
+    }
+  }
+}
+
+.filters-container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .filters-tag-container {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 1rem;
+    .filters-tag-button {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.menu-item-row-container {
+  display: flex;
+  flex-direction: row;
+  .menu-item-column-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 10px;
+    .title-row-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .menu-item-title {
+        font-size: 1.2rem;
+      }
+      .menu-item-tag {
+        font-size: 1.2rem;
+      }
+    }
+    .menu-item-price {
+      font-size: 1.1rem;
+    }
+    .menu-item-desc {
+      font-size: 0.8rem;
+    }
+  }
+  .menu-item-column-img-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2px;
+    .menu-item-img {
+      border-radius: 5px;
+      aspect-ratio: 1/1;
+      width: 100%;
+      object-fit: cover;
+    }
+    .menu-item-button-container {
+      width: 100%;
+      .menu-item-button-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: aliceblue;
+        .menu-item-button {
+          width: 35%;
+        }
+        .sub {
+          border-radius: 5px 0px 0px 5px;
+        }
+        .plus {
+          border-radius: 0px 5px 5px 0px;
+        }
+        .menu-item-text {
+          align-self: center;
+        }
+      }
+      .menu-item-button {
+        width: 100%;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+    }
+    .menu-item-custom {
+      align-self: center;
+      color: grey;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}

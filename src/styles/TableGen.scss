@@ -1,0 +1,121 @@
+.table-container {
+  margin: 0 20px;
+  .table-row-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    .table-item-title {
+      font-size: 1rem;
+    }
+    .table-item {
+      // margin-left: 20px;
+    }
+    .button-container {
+      height: 1.8rem;
+      width: 1.8rem;
+      background-color: #e9e9ea;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button {
+        color: #007aff;
+        font-size: 1rem;
+      }
+    }
+  }
+  .table-row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    .table-column-container {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .table-row-container-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .table-item-title {
+          font-size: 1rem;
+        }
+      }
+      .table-item-button {
+        margin-top: auto;
+        justify-content: end;
+      }
+      .table-item {
+        margin-left: 20px;
+        // padding: 4px 6px 3px 7px;
+        // padding: 0px;
+        padding: 1px;
+        font-size: 1rem;
+      }
+      .table-item-input {
+        // width: 100%;
+        margin-left: 20px;
+        // padding: 0px;
+        font-size: 1rem;
+      }
+    }
+
+    .table-column-img-container {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .table-qr-code {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .table-item-button {
+        margin-top: auto;
+        border-radius: 5px;
+        height: 2rem;
+        font-size: 1rem;
+        .table-item-button-icon{
+          font-size: 1.2rem;
+          text-align: center;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.table-button-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 10px 20px;
+  .table-button-row-left {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    .table-button-text {
+      height: 2rem;
+    }
+  }
+  .table-button-row-right {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    .table-button-container {
+      height: 2rem;
+      width: 2rem;
+      background-color: #e9e9ea;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .table-button {
+        color: #007aff;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

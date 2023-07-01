@@ -1,0 +1,42 @@
+$tab-active: #d9d9d9;
+$tab-inactive: #aeaeae;
+$ck3-color: #341617;
+$navbar-height: 60px;
+
+@font-face {
+  font-family: "Hack";
+  src: local("Hack"), url("/assets/Hack-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hack";
+  font-style: italic;
+  src: local("Hack"), url("/assets/Hack-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hack";
+  font-weight: 900;
+  src: local("Hack"), url("/assets//Hack-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hack";
+  font-weight: 900;
+  font-style: italic;
+  src: local("Hack"), url("/assets/Hack-BoldItalic.ttf") format("truetype");
+}
+
+* {
+  font-family: "Hack";
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+@mixin click {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
